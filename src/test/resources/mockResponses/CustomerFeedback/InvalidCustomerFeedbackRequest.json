@@ -1,0 +1,11 @@
+{
+  "mobileNumber": "8310603980",
+  "category": "SOMETHING",
+  "feedbackSentiment": "UNHAPPY",
+  "groupName": "SALES",
+  "isUserDefined": false,
+  "feedbackContext": {
+    "feedbackText": "It is very good",
+    "feedbackTarget": "ID1234"
+  }
+}

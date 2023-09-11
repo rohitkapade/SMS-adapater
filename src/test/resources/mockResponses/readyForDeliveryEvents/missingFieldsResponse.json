@@ -1,0 +1,51 @@
+{
+  "data": [
+    {
+      "REG_NUM_s": "MH20CS1254",
+      "JC_DIV_NAME_s": "3002030-Sv&Pa-Aurangabad-SanyaM",
+      "LOB_s": "Cars",
+      "JC_DLR_CODE_s": "3002030",
+      "CHASSIS_NUM_s": "MAT608525DLF13685",
+      "JOB_TYPE_s": "Service Order",
+      "JC_LAST_UPD_DT_dt": "2019-08-12T12:29:27Z",
+      "JC_SUBSTAT_s": "Ready For delivery",
+      "AST_PRI_CELL_NUM_s": "9823941375",
+      "AST_CONCAT_FULL_NAME_s": "Miss. PRANITA PRAKASHRAO MULE",
+      "PPL_s": "Indica Vista",
+      "DIV_COMM_NAME_s": "SANYA MOTORS - JALNA ROAD",
+      "SR_TYPE_s": "Paid Service",
+      "AST_PRI_CONFST_NAME_s": "PRANITA",
+      "JC_DLR_ID_s": "1-6DJDR5",
+      "JC_DIV_CITY_s": "AURANGABAD",
+      "AST_PRI_LSTNAME_s": "MULE",
+      "PL_s": "Indica Vista LX TDI",
+      "SR_DIV_ID_s": "1-6DJDR5",
+      "ASSG_FST_NAME_s": "P",
+      "ASSG_LSTNAME_s": "V"
+    },
+    {
+      "REG_NUM_s": "MH38V5500",
+      "JC_DIV_NAME_s": "3002030-Sv&Pa-Aurangabad-SanyaM",
+      "LOB_s": "UVs",
+      "JC_DLR_CODE_s": "3002030",
+      "CHASSIS_NUM_s": "MAT614752HRN12520",
+      "JOB_TYPE_s": "Service Order",
+      "JC_LAST_UPD_DT_dt": "2019-08-12T12:20:39Z",
+      "JC_SUBSTAT_s": "Ready For delivery",
+      "AST_PRI_CELL_NUM_s": "9923105500",
+      "AST_CONCAT_FULL_NAME_s": "Mr. ARVIND  CHAWRIA",
+      "PPL_s": "Hexa",
+      "DIV_COMM_NAME_s": "SANYA MOTORS - JALNA ROAD",
+      "SR_TYPE_s": "Campaign",
+      "AST_PRI_CONFST_NAME_s": "ARVIND",
+      "JC_DLR_ID_s": "1-6DJDR5",
+      "JC_DIV_CITY_s": "AURANGABAD",
+      "AST_PRI_LSTNAME_s": "CHAWRIA",
+      "PL_s": "Hexa XTA 4x2",
+      "SR_DIV_ID_s": "1-6DJDR5",
+      "ASSG_FST_NAME_s": "P",
+      "ASSG_LSTNAME_s": "V"
+    }
+  ],
+  "total_count": 2
+}

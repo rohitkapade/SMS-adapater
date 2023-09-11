@@ -1,0 +1,31 @@
+{
+  "Call": {
+    "Sid": "d532b2e8e1503aed596e6bfb07ae168n",
+    "ParentCallSid": {
+    },
+    "DateCreated": "2022-08-23 13:10:58",
+    "DateUpdated": "2022-08-23 13:10:58",
+    "AccountSid": "conneqtbusinesssolutions2m",
+    "To": "02249360747",
+    "From": "09004244790",
+    "PhoneNumberSid": "02249360747",
+    "Status": "in-progress",
+    "StartTime": "2022-08-23 13:10:58",
+    "EndTime": {
+    },
+    "Duration": {
+    },
+    "Price": {
+    },
+    "Direction": "outbound-api",
+    "AnsweredBy": {
+    },
+    "ForwardedFrom": {
+    },
+    "CallerName": {
+    },
+    "Uri": "\/v1\/Accounts\/conneqtbusinesssolutions2m\/Calls\/d532b2e8e1503aed596e6bfb07ae168n",
+    "RecordingUrl": {
+    }
+  }
+}

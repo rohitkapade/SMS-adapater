@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <style>
+      @page {  size: B4; }
+      .content {
+        display: flex;
+        flex-direction: column;
+      }
+      .content .date-div {
+        text-align:right;
+      }
+      .contact-info {
+        padding: 20px 0;
+      }
+      .bottom .left-side {
+        width:30%;
+        display: table-cell;
+      }
+
+      .col-block-50 {
+        width:50%;
+        display: table-cell;
+        padding-right: 5px;
+      }
+
+      .bottom .right-side {
+        width:30%;
+        display: table-cell;
+        padding: 10px;
+      }
+
+      img {
+        width:100px;
+        height:100px;
+        display:inline-block;
+      }
+      .qr-blocks .platform {
+        padding-left:10px;
+      }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="date-div">
+        <p class="date">Date : ${date}</p>
+    </div>
+    <div class="to">${customerName}</div>
+    <div class="address-1">${address1}</div>
+    <div class="address-2">${address2}</div>
+    <div class="city">${city}</div>
+    <div class="state-country">${state}, ${country}.</div>
+    <br/>
+    <div class="body">
+        <div class="salutation">
+            Dear ${customerName},</div>
+        <div class="letter">
+            <p>
+                Congratulations on taking delivery of your new ${vehicleName}.We are
+                pleased to welcome you as the new member of Tata Motors family.
+            </p>
+            <p>Let me also express my gratitude to you for selecting our dealership
+                for buying your new  ${vehicleName}.</p>
+            <p>Our team must have already explained you about the Standard warranty and service schedule applicable
+                for your Tata ${vehicleName}. The warranty duration as well as the terms and conditions have also been
+                mentioned in the owners Manual provided along with your ${vehicleName}. In case, you have not availed AMC and Extended Warranty
+                for your ${vehicleName}, you may wish to contact our service team on
+                the below mentioned numbers.</p>
+            <p>
+                We, at Tata Motors, are committed to provide delightful experience
+                to you. Our workshop has the best-in-class facilities with competent
+                and welltrained technicians. For the convenience of our esteemed
+                Customers, we offer the following exclusive facilities:
+            </p>
+            <ul>
+                <li>Tata Motors Service Connect App for enhanced service experience</li>
+                <li>Vehicle pick-up and drop facility</li>
+                <li>Customer lounge with Wi-fi and other exclusive facilities</li>
+                <li>Tata Motors 24*7 Roadside Assistance at 1800 209 8282</li>
+            </ul>
+            <p class="contact-info">For any assistance, please feel free to contact us on <b>18002098282</b>.</p>
+            <p>
+                We look forward to hearing from you and meeting you at the first
+                service of your ${vehicleName}. We are confident that this is the
+                beginning of a long and happy association.
+            </p>
+            <div class="bottom">
+                <div class="left-side">
+                    <p>Thanking You.</p>
+                    <br/>
+                    <p>Yours sincerely,</p>
+                    <div class="white-space"></div>
+                    <p>(General Manager)</p>
+                    <p>${dealerName}</p>
+                    <p>${dealerCity}</p>
+                </div>
+                <div class="right-side">
+                    <div class="desc">To download the Tata Motors Service Connect (TMSC) App, please scan the
+                        following QR code</div>
+                    <div class="qr-blocks">
+                        <div class="android col-block-50">
+                            <img class="android-img" src="${androidQR}" alt="Android QR Code" style="width: 100px; height=100px" />
+                            <div class="platform">Android</div>
+                        </div>
+                        <div class="apple col-block-50">
+                            <img class="apple-img" src="${appleQR}" alt="Apple QR Code" style="width: 100px; height=100px" />
+                            <div class="platform">Apple</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

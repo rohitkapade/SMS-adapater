@@ -1,0 +1,30 @@
+{
+  "data": [
+    {
+      "CON_FSTNAME_s": "RAKESH",
+      "LOB_s": "UVs",
+      "CON_CELL_PH_NUM_s": "9001071688",
+      "VC_ID_s": "1-AVH6B-2",
+      "ENGINE_NUM_s": "REVTRN11GYXK66961",
+      "PPL_s": "Nexon",
+      "VEHICLE_ORG_s": "ASL MOTORS PVT LTD",
+      "LAST_UPD_dt": "2021-09-09T07:54:38Z",
+      "DEALERCODE_s": "3000880",
+      "CHASSIS_NUM_s": "MAT627243MLG51961",
+      "CON_LSTNAME_s": "VIKASH",
+      "NEXT_SRVC_DUE_dt": "2021-10-21T00:00:00Z",
+      "NEXT_SRVC_TYPE_s": "1st Free Service",
+      "ACTL_DELVIRY_DATE_dt": "2021-09-09T00:00:00Z",
+      "ROW_ID": "5-BSBZ0-25",
+      "NAME_s": "54605325AL1R",
+      "DLR_CITY_s": "JAMSHEDPUR",
+      "FUEL_TYPE_s": "PETROL",
+      "CON_EMAIL_s": "akashay.vikash791@gmail.com",
+      "CHA_STAT_s": "Delivered to Customer",
+      "REGISTRATION_NUM_s": "AF1",
+      "LAST_SERVICE_dt": "2021-08-09T00:00:00Z",
+      "PL_s": "Nexon (P) XM (S)"
+    }
+  ],
+  "total_count": 3
+}

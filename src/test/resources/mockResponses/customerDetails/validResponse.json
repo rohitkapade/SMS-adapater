@@ -1,0 +1,34 @@
+[
+  {
+    "address": {
+      "address_line_1": "40/305B",
+      "address_line_2": "BAGYA NAGAR",
+      "area": "",
+      "city": "KURNOOL",
+      "country": "India",
+      "district": "KURNOOL",
+      "panchayat": "",
+      "pincode": "",
+      "state": {
+        "code": "AP",
+        "name": "Andhra Pradesh"
+      },
+      "taluka": "",
+      "tehsil": ""
+    },
+    "category": "",
+    "contact_id": "1-8M3DD4",
+    "crn_number": "",
+    "customer_category": "",
+    "email": "",
+    "first_name": "FAROOQ",
+    "last_name": "S.",
+    "microsegment": "",
+    "mobile_number": "9908523366",
+    "occupation": "",
+    "pan": "",
+    "primary_account_id": "",
+    "segment": "",
+    "source": ""
+  }
+]

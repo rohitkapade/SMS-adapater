@@ -1,0 +1,10 @@
+[
+  {
+    "uniqueId": "123",
+    "s3FileUrl" : "s3://dummy-url.com/1"
+  },
+  {
+    "uniqueId": "456",
+    "s3FileUrl" : "s3://dummy-url.com/2"
+  }
+]

@@ -1,0 +1,103 @@
+server:
+  port: 8099
+
+cloud:
+  aws:
+    credentials:
+      access-key: ${AWS_ACCESS_KEY}
+      secret-key: ${AWS_SECRET_KEY}
+    region:
+      static: ${AWS_SPRING_CLOUD_REGION}
+    stack:
+      auto: false
+
+spring:
+  mvc:
+    dispatch-options-request: true
+  datasource:
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 5
+    url: ${POSTGRES_CONNECT_URL}
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_UEP_PASSWORD}
+  servlet:
+    multipart:
+      max-file-size: 100MB
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: ${POSTGRES_AUTO_DDL}
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  flyway:
+    enabled: true
+    table: flyway_digital_platform_integration_service
+    locations: ${DB_SCRIPTS_LOCATION:classpath:db-migration/schema}
+    baseline-on-migrate: true
+    baselineVersion: ${FLYWAY_BASELINE_VERSION}
+
+kafka:
+  bootstrapServers: ${KAFKA_BROKER_SERVICE_URL}
+  incoming-chat-queue-topic: ${INCOMING_CHAT_QUEUE_TOPIC}
+  consumer:
+    clientId: ${DIGITAL_PLATFORM_CONSUMER_CLIENTID}
+    consumer-group: ${DIGITAL_PLATFORM_CONSUMER_GROUP}
+    autoResetConfig: latest
+  producer:
+    clientId: ${EVENT_PRODUCER_CLIENT_ID}
+    eventProducerTopic: ${EVENT_PRODUCER_TOPIC}
+    errorEventsTopic: ${ERROR_EVENTS_TOPIC}
+    cancelAgentTransferProducerTopic: ${CANCEL_AGENT_TRANSFER_TOPIC}
+
+aws:
+  email-sqs-queue: ${EMAIL_SQS_QUEUE}
+  s3:
+    region: ${AWS_SPRING_CLOUD_REGION}
+    email-bucket: ${S3_EMAIL_BUCKET}
+    outbound-document-bucket-name: ${S3_OUTBOUND_DOCUMENT_UPLOAD_BUCKET}
+    fleet-edge-bucket-name: ${S3_FLEET_EDGE_BUCKET}
+    signed-url-expiry-mins: ${S3_SIGNED_URL_EXPIRY_MINUTES}
+
+solr-api:
+  base-url: ${SOLR_API_BASE_URL}
+  events-endpoint: ${SOLR_API_EVENTS_ENDPOINT}
+  auth-token: ${SOLR_API_AUTH_TOKEN}
+  cv-opty-auth-token: ${SOLR_OPTY_API_AUTH_TOKEN}
+  page-size: ${SOLR_API_PAGESIZE}
+  customer-fetch-url: ${SOLR_CUSTOMER_FETCH_URL}
+  opty-creation-endpoint: ${SOLR_OPTY_CREATION_API_ENDPOINT}
+  opty-details-endpoint: ${SOLR_OPTY_DETAILS_API_ENDPOINT}
+  division-list-endpoint: ${DIVISION_LIST_ENDPOINT}
+  empty-division-list-status-codes: ${EMPTY_DIVISION_LIST_STATUS_CODES}
+  city-list-endpoint: ${CITY_LIST_ENDPOINT}
+  product-detail-endpoint: ${SOLR_PRODUCT_DETAIL_ENDPOINT}
+
+transliterate-api:
+  rev-api-key: ${REV_API_KEY}
+  rev-app-id: ${REV_APP_ID}
+  rev-app-name: ${REV_APP_NAME}
+  transliterate-domain: ${TRANSLITERATE_DOMAIN}
+  transliterate-url: ${TRANSLITERATE_URL}
+
+cbsl-conf-api:
+  base-url: ${CBSL_CONF_API_BASE_URL}
+  conf-call-endpoint: ${CBSL_CONF_CALL_ENDPOINT}
+  auth-key: ${CBSL_CONF_API_AUTH_KEY}
+
+domain:
+  business-unit: ${BUSINESS_UNIT}
+  file-events: ${FILE_RELATED_EVENTS}
+  crm-sender-email: ${CRM_SENDER_EMAIL}
+
+dealership-api:
+  base-url: ${DEALERSHIP_API_BASE_URL}
+  dealership-endpoint: ${DEALERSHIP_API_ENDPOINT}
+
+product-api:
+  base-url: ${PRODUCT_API_BASE_URL}
+  product-endpoint: ${PRODUCT_API_ENDPOINT}

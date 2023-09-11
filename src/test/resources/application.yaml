@@ -1,0 +1,105 @@
+server:
+  port: 8099
+
+cloud:
+  aws:
+    credentials:
+      access-key: ${AWS_ACCESS_KEY:testKey}
+      secret-key: ${AWS_SECRET_KEY:testSecret}
+    region:
+      static: ${AWS_SPRING_CLOUD_REGION:us-east-1}
+    stack:
+      auto: false
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  mvc:
+    dispatch-options-request: true
+  datasource:
+    hikari:
+      connectionTimeout: 20000
+      maximumPoolSize: 5
+    url: ${POSTGRES_CONNECT_URL:jdbc:postgresql://localhost:5432/postgres}
+    username: ${POSTGRES_USERNAME:postgres}
+    password: ${POSTGRES_UEP_PASSWORD:postgres}
+  servlet:
+    multipart:
+      max-file-size: 100MB
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  flyway:
+    enabled: false
+    table: flyway_digital_platform_integration_service
+    locations: ${DB_SCRIPTS_LOCATION:classpath:db-migration/schema}
+    baseline-on-migrate: false
+    baselineVersion: ${FLYWAY_BASELINE_VERSION:0}
+
+kafka:
+  bootstrapServers: ${KAFKA_BROKER_SERVICE_URL:http://localhost:9092}
+  incoming-chat-queue-topic: ${INCOMING_CHAT_QUEUE_TOPIC:incoming-chat-queue-v1}
+  consumer:
+    clientId: ${DIGITAL_PLATFORM_CONSUMER_CLIENTID:digital-platform-consumer-clientId}
+    consumer-group: ${DIGITAL_PLATFORM_CONSUMER_GROUP:digital-platform-consumer-group}
+    autoResetConfig: latest
+  producer:
+    clientId: ${EVENT_PRODUCER_CLIENT_ID:event-producer-client-id}
+    eventProducerTopic: ${EVENT_PRODUCER_TOPIC:pv-outbound-event-queue-v1}
+    errorEventsTopic: ${ERROR_EVENTS_TOPIC:pv-outbound-event-error-queue-v1}
+    cancelAgentTransferProducerTopic: ${CANCEL_AGENT_TRANSFER_TOPIC:cv-cancel-agent-transfer-queue-v1}
+
+aws:
+  email-sqs-queue: ${EMAIL_SQS_QUEUE:engagex-pdf-email-outbound-queue}
+  s3:
+    region: ${AWS_SPRING_CLOUD_REGION:us-east-1}
+    email-bucket: ${S3_EMAIL_BUCKET:engagex-pdf-email-outbound}
+    outbound-document-bucket-name: ${S3_OUTBOUND_DOCUMENT_UPLOAD_BUCKET:engagex-mail-extracted-pdfs}
+    fleet-edge-bucket-name: ${S3_FLEET_EDGE_BUCKET:engagex-customer-query-cv}
+    signed-url-expiry-mins: ${S3_SIGNED_URL_EXPIRY_MINUTES:5}
+
+solr-api:
+  base-url: ${SOLR_API_BASE_URL:http://localhost:8099}
+  events-endpoint: ${SOLR_API_EVENTS_ENDPOINT:/api/pv/notification/get_details/}
+  auth-token: ${SOLR_API_AUTH_TOKEN:dummy}
+  cv-opty-auth-token: ${SOLR_OPTY_API_AUTH_TOKEN:token}
+  page-size: ${SOLR_API_PAGESIZE:2}
+  customer-fetch-url: ${SOLR_CUSTOMER_FETCH_URL:/api/search/pv_service/contact/}
+  opty-creation-endpoint: ${SOLR_OPTY_CREATION_API_ENDPOINT:/api/pv/auto_opty_create/}
+  opty-details-endpoint: ${SOLR_OPTY_DETAILS_API_ENDPOINT:/api/pv/chatbot/search/opty/details/}
+  division-list-endpoint: ${DIVISION_LIST_ENDPOINT:/api/cv/chatbot/get/division-by-city/}
+  empty-division-list-status-codes: ${EMPTY_DIVISION_LIST_STATUS_CODES:20,21}
+  city-list-endpoint: ${CITY_LIST_ENDPOINT:/api/cv/chatbot/get/city-by-state/}
+  product-detail-endpoint: ${SOLR_PRODUCT_DETAIL_ENDPOINT:/api/pv/product_details/}
+
+transliterate-api:
+  rev-api-key: ${REV_API_KEY:api_key}
+  rev-app-id: ${REV_APP_ID:app_id}
+  rev-app-name: ${REV_APP_NAME:transliterate}
+  transliterate-domain: ${TRANSLITERATE_DOMAIN:1}
+  transliterate-url: ${TRANSLITERATE_URL:http://localhost:8099}
+
+cbsl-conf-api:
+  base-url: ${CBSL_CONF_API_BASE_URL:http://localhost:8081}
+  conf-call-endpoint: ${CBSL_CONF_CALL_ENDPOINT:/whatsappc2c/clicktocall.php}
+  auth-key: ${CBSL_CONF_API_AUTH_KEY:testAuthKey}
+
+domain:
+  business-unit: ${BUSINESS_UNIT:PV}
+  file-events: ${FILE_RELATED_EVENTS:SERVICE_INVOICE,SERVICE_PROFORMA,SERVICE_PAYMENT_RECEIPT}
+  crm-sender-email: ${CRM_SENDER_EMAIL:crmdmsworkflow@tatamotors.com}
+
+dealership-api:
+  base-url: ${DEALERSHIP_API_BASE_URL:http://localhost:7789}
+  dealership-endpoint: ${DEALERSHIP_API_ENDPOINT:/api/get/dealer_details/}
+
+product-api:
+  base-url: ${PRODUCT_API_BASE_URL:http://localhost:7790}
+  product-endpoint: ${PRODUCT_API_ENDPOINT:/api/get/recent_products/}

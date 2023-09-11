@@ -1,0 +1,13 @@
+package com.tml.uep.model;
+
+import java.util.Map;
+import lombok.Data;
+import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.context.annotation.Configuration;
+
+@Data
+@Configuration
+@ConfigurationProperties(prefix = "domain")
+public class EventExpiryTimeConfig {
+    private Map<String, Integer> eventExpiryTimeInMinutes;
+}

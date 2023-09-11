@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "CON_FSTNAME_s": "INDIVIDUAL",
+      "LOB_s": "MCV Cargo",
+      "CON_CELL_PH_NUM_s": "7980883043",
+      "VC_ID_s": "1-LU-1007",
+      "ENGINE_NUM_s": "697TC45 CVZ876122",
+      "PPL_s": "MCV LPT",
+      "VEHICLE_ORG_s": "BAFNA Motors (Mumbai) Pvt. Ltd.",
+      "LAST_UPD_dt": "2020-09-21T05:57:07Z",
+      "DEALERCODE_s": "1001680",
+      "CHASSIS_NUM_s": "373341CVZ713976",
+      "CON_LSTNAME_s": "12THFEB",
+      "ACTL_DELVIRY_DATE_dt": "2019-09-09T00:00:00Z",
+      "ROW_ID": "1-106M-29",
+      "NAME_s": "26326142000R",
+      "DLR_CITY_s": "AHMEDABAD",
+      "FUEL_TYPE_s": "DIESEL",
+      "CHA_STAT_s": "Delivered to Customer",
+      "PL_s": "LPT1613"
+    }
+  ],
+  "total_count": 1
+}

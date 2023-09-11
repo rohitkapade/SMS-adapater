@@ -1,0 +1,45 @@
+{
+  "data": [
+    {
+      "DIV_COMMON_NAME_s": "GALAXY MOTORS-MULUND",
+      "SR_ID_s": "5-CFCLWB3",
+      "SR_NUMBER_s": "SR-GalMot/MP1-2223-000004",
+      "DIV_PHNUM_SMS_s": "9167230410",
+      "REG_NUM_s": "SFFS111",
+      "SR_CREATED_dt": "2022-04-12T06:45:55Z",
+      "DIV_NAME_s": "3000160-Sv&Pa-Mulund-GalMot",
+      "SR_SOURCE_s": "Customer App",
+      "DIV_ID_s": "1-44KJTF1",
+      "ORG_NAME_s": "GALAXY MOTORS",
+      "SR_BOOKED_DATE_TIME_dt": "2022-04-16T06:45:00Z",
+      "ASSIGNED_TO_s": "RASIKAM_3000160",
+      "SR_TYPE_s": "Running Repairs",
+      "SR_STATUS_s": "New",
+      "CHASSIS_NUM_s": "600202HWZP64513",
+      "Customer_num": "",
+      "SA_first_name": "",
+      "SA_last_name": ""
+    },
+    {
+      "DIV_COMMON_NAME_s": "GALAXY MOTORS-MULUND",
+      "SR_ID_s": "5-CFCLWB3",
+      "SR_NUMBER_s": "SR-GalMot/MP1-2223-000004",
+      "DIV_PHNUM_SMS_s": "9167230410",
+      "REG_NUM_s": "SFFS111",
+      "SR_CREATED_dt": "2022-04-12T06:45:55Z",
+      "DIV_NAME_s": "3000160-Sv&Pa-Mulund-GalMot",
+      "SR_SOURCE_s": "Customer App",
+      "DIV_ID_s": "1-44KJTF1",
+      "ORG_NAME_s": "GALAXY MOTORS",
+      "SR_BOOKED_DATE_TIME_dt": "2022-04-16T06:45:00Z",
+      "ASSIGNED_TO_s": "RASIKAM_3000160",
+      "SR_TYPE_s": "Running Repairs",
+      "SR_STATUS_s": "New",
+      "CHASSIS_NUM_s": "600132GYZP29816",
+      "Customer_num": "9821945706",
+      "SA_first_name": "",
+      "SA_last_name": ""
+    }
+  ],
+  "total_count": 2
+}

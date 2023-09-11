@@ -1,0 +1,18 @@
+{
+  "responseList": [
+    {
+      "apiStatus": 2,
+      "inString": "रमेश",
+      "outString": [
+        "ramesh"
+      ]
+    },
+    {
+      "apiStatus": 2,
+      "inString": ".",
+      "outString": [
+        "."
+      ]
+    }
+  ]
+}

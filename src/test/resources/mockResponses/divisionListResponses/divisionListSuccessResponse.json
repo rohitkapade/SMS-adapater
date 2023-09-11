@@ -1,0 +1,28 @@
+{
+  "division_list": [
+    {
+      "org-name": "BAFNA AUTO ENGINEERING PVT. LTD.",
+      "div_id": "1-EE7V5",
+      "div_name": "1001700-Sales-Katraj-BafAuE",
+      "dealer_code": "1001700",
+      "taluka": "PUNE",
+      "city": "PUNE",
+      "district": "PUNE",
+      "state": "MH",
+      "address1": "S.NO.34, HISSA NO. 16 KATRAJ DEHU ROAD BYPASS",
+      "address2": "AMBEGAON (BJK.), KATRAJ"
+    },
+    {
+      "org-name": "SEHGAL WHEELS PRIVATE LIMITED",
+      "div_id": "1-XSXD8T",
+      "div_name": "1002470-Sales-Akrudi-SegWhl",
+      "dealer_code": "1002470",
+      "taluka": "HAVELI",
+      "city": "PUNE",
+      "district": "PUNE",
+      "state": "MH",
+      "address1": "LAKE TOWN B - 10 / 704",
+      "address2": "BIBWEWADI ,"
+    }
+  ]
+}
